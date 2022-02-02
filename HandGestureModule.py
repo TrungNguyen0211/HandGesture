@@ -37,6 +37,7 @@ class HandDetector:
         if self.result.multi_hand_landmarks:
             currentHand = self.result.multi_hand_landmarks[handNumber]
             for id, landmark in enumerate(currentHand.landmark):
+                
                 # Getting the Pixel value of the landmark instead of decimal
                 height, width, channels = img.shape
 
